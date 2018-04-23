@@ -6,7 +6,7 @@ export default () => (
     <h1>About</h1>
     <p>
       Hi! My name is Noelle. I was born and raised in New York. After studying Economics at NYU, I
-      worked at{' '}
+      worked in finance for several years at{' '}
       <a style={styles.link} href="https://www.lordabbett.com/en.html" target="_blank">
         Lord Abbett
       </a>{' '}
@@ -15,22 +15,21 @@ export default () => (
         Mizuho Bank
       </a>, where I got my first taste of programming.
     </p>
-    <img src={noelle} style={styles.img}/>
+    <div style={{ display: 'flex', justifyContent: 'center' }}>
+      <img src={noelle} style={styles.img} />
+    </div>
   </div>
 )
 
 const styles = {
   link: {
     textDecoration: 'none',
-    color: 'purple',
     ':hover': {
       textDecoration: 'none',
-      color: 'navy',
     },
   },
   img: {
     borderRadius: '50%',
-    width: '50%',
-    align: 'center'
-  }
+    height: '18vh',
+  },
 }

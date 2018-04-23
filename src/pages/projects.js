@@ -34,7 +34,7 @@ export default () => (
     <div style={styles.projectContainer}>
       <h3>🎶 The Listening Room 🎶</h3>
       <p>
-        Passionate about music, <a href="https://luis-rincon-portfolio.herokuapp.com/">Luis Rincon</a> and I
+        Passionate about music, <a href="https://luis-rincon-portfolio.herokuapp.com/" target="_blank">Luis Rincon</a> and I
         developed The Listening Room during a four-day hackathon. By leveraging Firebase's Cloud
         Storage and Realtime Database, users are able to seamlessly upload mp3 files, and listen and
         chat about music simultaneously anywhere in the world, without skipping a beat. The

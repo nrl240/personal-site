@@ -8,15 +8,21 @@
     "serve": "gatsby serve"
   },
   "dependencies": {
+    "bloomer": "^0.6.3",
+    "bulma": "^0.7.1",
+    "font-awesome": "^4.7.0",
     "gatsby": "^1.9.250",
     "gatsby-image": "^1.0.47",
     "gatsby-link": "^1.6.40",
     "gatsby-plugin-favicon": "^2.1.1",
+    "gatsby-plugin-react-helmet": "^2.0.11",
+    "gatsby-plugin-sass": "^1.0.26",
     "gatsby-plugin-sharp": "^1.6.43",
     "gatsby-plugin-typography": "^1.7.18",
     "gatsby-source-filesystem": "^1.5.33",
     "gatsby-transformer-sharp": "^1.6.23",
-    "react-headroom": "^2.2.2",
+    "prop-types": "^15.6.1",
+    "react-helmet": "^5.2.0",
     "typography-theme-fairy-gates": "^0.15.11",
     "typography-theme-st-annes": "^0.15.10"
   },
