@@ -13,6 +13,7 @@
     "gatsby-link": "^1.6.40",
     "gatsby-plugin-sharp": "^1.6.43",
     "gatsby-plugin-typography": "^1.7.18",
+    "gatsby-source-filesystem": "^1.5.33",
     "gatsby-transformer-sharp": "^1.6.23",
     "typography-theme-fairy-gates": "^0.15.11",
     "typography-theme-st-annes": "^0.15.10"
