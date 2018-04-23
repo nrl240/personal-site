@@ -9,8 +9,8 @@ export default () => (
         GitHub
       </a>
     </h2>
-    <div>
-      <h3>🌎 MapStack 🌍</h3>
+    <div style={styles.projectContainer}>
+        <h3>🌎 MapStack 🌍</h3>
       <p>
         Create, follow and stack maps to plan a vacation full of the best local hot spots and off
         the beaten path gems 💎
@@ -31,10 +31,10 @@ export default () => (
         </li>
       </ul>
     </div>
-    <div>
+    <div style={styles.projectContainer}>
       <h3>🎶 The Listening Room 🎶</h3>
       <p>
-        Passionate about music, <a href="http://www.luis-rincon.com/">Luis Rincon</a> and I
+        Passionate about music, <a href="https://luis-rincon-portfolio.herokuapp.com/">Luis Rincon</a> and I
         developed The Listening Room during a four-day hackathon. By leveraging Firebase's Cloud
         Storage and Realtime Database, users are able to seamlessly upload mp3 files, and listen and
         chat about music simultaneously anywhere in the world, without skipping a beat. The
@@ -56,7 +56,7 @@ export default () => (
         </li>
       </ul>
     </div>
-    <div>
+    <div style={styles.projectContainer}>
       <h3>🌶 Saucesome 🌶</h3>
       <p>
         Built in a week by a team of four developers launching their careers in tech, Saucesome is a
@@ -84,3 +84,12 @@ export default () => (
     </div>
   </div>
 )
+
+const styles = {
+  projectContainer: {
+    display: `flex`,
+    flexDirection: `column`,
+    justifyContent: `center`,
+    padding: `5px 10px`,
+  },
+}
