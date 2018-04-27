@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import faviconBlock from '../../img/faviconBlock.png'
 
 const ListLink = props => (
   <li style={{ display: `inline-block`, marginRight: `1rem` }}>
@@ -10,7 +11,7 @@ const ListLink = props => (
 const AppHeader = ({children}) => (
   <header style={styles.header}>
     <Link to="/" style={{ textShadow: `none`, backgroundImage: `none` }}>
-      <h3 style={{ display: `inline` }}>Noelle Laureano</h3>
+      <h2 style={{ display: `inline` }}>Noelle Laureano</h2>
     </Link>
     <ul style={{ listStyle: `none`, float: `right`, textDecoration: `none` }}>
       <ListLink to="/about/">About</ListLink>
@@ -23,13 +24,15 @@ const AppHeader = ({children}) => (
 export default AppHeader
 
 const styles = {
-  site: {
-    marginBottom: `rhythm(1)`,
-    margin: `0 auto`,
-    maxWidth: 650,
-    padding: `1.25rem 1rem`,
-  },
   header: {
-    marginBottom: `1.5rem`,
+    padding: `1.5rem`,
+    backgroundColor: `#F1D4C7`
   },
 }
+
+// site: {
+//   marginBottom: `rhythm(1)`,
+//   margin: `0 auto`,
+//   maxWidth: 650,
+//   padding: `1.25rem 1rem`,
+// },

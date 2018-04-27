@@ -4,11 +4,7 @@ import Link from 'gatsby-link'
 export default () => (
   <div>
     <h1>Projects</h1>
-    <h2>
-      <a style={{ display: 'table-cell' }} href="https://github.com/nrl240" target="_blank">
-        GitHub
-      </a>
-    </h2>
+    <br/>
     <div style={styles.projectContainer}>
         <h3>🌎 MapStack 🌍</h3>
       <p>
@@ -90,6 +86,12 @@ const styles = {
     display: `flex`,
     flexDirection: `column`,
     justifyContent: `center`,
-    padding: `5px 10px`,
+    padding: `1rem 0rem`,
   },
 }
+
+// <h2>
+//   <a style={{ display: 'table-cell' }} href="https://github.com/nrl240" target="_blank">
+//     GitHub
+//   </a>
+// </h2>

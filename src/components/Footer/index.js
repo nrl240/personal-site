@@ -1,46 +1,46 @@
 import React from 'react'
-import { Footer, Container, Content, Columns, Column, Icon, Image } from 'bloomer'
+import Link from 'gatsby-link'
+import { Footer, Icon } from 'bloomer'
 
 import gmail from '../../img/gmail.svg'
 import linkedin from '../../img/linkedin.svg'
 import github from '../../img/github.svg'
+import faviconBlock from '../../img/faviconBlock.png'
 
 const AppFooter = () => (
-  <Footer id="footer">
-    <Container>
-      <Content>
-        <Columns style={styles.imgsContainer}>
-          <Column style={styles.img}>
-            <a href="mailto:nrlaureano@gmail.com" target="_blank">
-              <Image src={gmail} isSize="48x48" />
-            </a>
-          </Column>
-          <Column style={styles.img}>
-            <a href="https://www.linkedin.com/in/noellelaureano/" target="_blank">
-              <Image src={linkedin} isSize="48x48" />
-            </a>
-          </Column>
-          <Column style={styles.img}>
-            <a href="https://github.com/nrl240" target="_blank">
-              <Image src={github} isSize="48x48" />
-            </a>
-          </Column>
-        </Columns>
-      </Content>
-    </Container>
+  <Footer id="footer" style={styles.footer}>
+    <div style={styles.imgsContainer}>
+      <a href="mailto:nrlaureano@gmail.com" target="_blank">
+        <img src={gmail} style={styles.img} />
+      </a>
+      <a href="https://www.linkedin.com/in/noellelaureano/" target="_blank">
+        <img src={linkedin} style={styles.img} />
+      </a>
+      <a href="https://github.com/nrl240" target="_blank">
+        <img src={github} style={styles.img} />
+      </a>
+      <Link to="/">
+        <img src={faviconBlock} style={styles.img} />
+      </Link>
+    </div>
   </Footer>
 )
 
 export default AppFooter
 
 const styles = {
-  imgsContainer: {
+  footer: {
+    padding: `1.5rem 1.5rem`,
     display: `flex`,
     justifyContent: `center`,
   },
-  img: {
+  imgsContainer: {
     display: `flex`,
-    justifyContent: `center`,
+  },
+  img: {
+    height: `80px`,
+    padding: `1rem 1rem`,
+    marginBottom: `0rem`,
   },
 }
 
