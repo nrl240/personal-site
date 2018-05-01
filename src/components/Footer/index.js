@@ -33,7 +33,7 @@ const styles = {
     padding: `0.5rem 0.5rem`,
     display: `flex`,
     justifyContent: `center`,
-    backgroundColor: `#F1D4C7`
+    backgroundColor: `#cccccc`
   },
   imgsContainer: {
     display: `flex`,

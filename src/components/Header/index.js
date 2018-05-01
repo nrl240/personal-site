@@ -26,7 +26,7 @@ export default AppHeader
 const styles = {
   header: {
     padding: `1.5rem`,
-    backgroundColor: `#F1D4C7`
+    backgroundColor: `#cc9999`
   },
 }
 

@@ -12,19 +12,17 @@ const Project = props => (
     <div className={styles.description}>
       <h2 className={styles.projectname}>{props.projectname}</h2>
       <p className={styles.excerpt}>{props.excerpt}</p>
-      <img src={props.mockup} className={styles.mockup} alt="" />
-      <div className={styles.buttons}>
-        <a href={props.siteUrl} target="_blank">
-          <button className="button" >
-            {props.projectname}
-          </button>
-        </a>
-        <a href={props.githubUrl} target="_blank">
-          <button className="button">
-            GitHub
-          </button>
-        </a>
-      </div>
+    </div>
+    <div className={styles.mockup}>
+      <img src={props.mockup} alt="" />
+    </div>
+    <div className={styles.buttons}>
+      <a href={props.siteUrl} target="_blank">
+        <button className="button">{props.projectname}</button>
+      </a>
+      <a href={props.githubUrl} target="_blank">
+        <button className="button">GitHub</button>
+      </a>
     </div>
   </div>
 )
@@ -55,7 +53,5 @@ export default () => (
       siteUrl="https://symbalplayer.firebaseapp.com/"
       githubUrl="https://github.com/TheListeningRoom/the-listening-room"
     />
-
   </Container>
 )
-
