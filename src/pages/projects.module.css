@@ -1,8 +1,12 @@
+h1 {
+  margin: 0 0.5em 0.75em;
+}
+
 .project {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 0.5em 2.5em;
+  margin: 0 1.5em 2.5em;
 }
 
 .project:last-child {
@@ -21,12 +25,24 @@
 }
 
 .projectname {
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.4rem;
   padding: 0;
 }
 
 .excerpt {
   margin-bottom: 0.5rem;
+}
+
+.techStack {
+  text-align: center;
+  padding: 0 0 0.25em 0;
+}
+
+.techStack img {
+  width: 100px;
+  max-width: 100%;
+  vertical-align: middle;
+  margin: 0 5px;
 }
 
 .buttons {

@@ -1,0 +1,7 @@
+export { default as reactImg } from './react.png'
+export { default as bootstrapImg } from './bootstrap.png'
+export { default as firebaseImg } from './firebase.png'
+export { default as googlemapsImg } from './googlemaps.png'
+export { default as herokuImg } from './heroku.png'
+export { default as nodeImg } from './node.png'
+export { default as postgresqlImg } from './postgresql.png'
