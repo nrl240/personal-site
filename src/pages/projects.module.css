@@ -17,15 +17,46 @@
 
 .description {
   flex: 1;
-  margin-left: 18px;
-  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .projectname {
-  margin: 0 0 12px 0;
+  margin-bottom: 0.25rem;
   padding: 0;
 }
 
 .excerpt {
-  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.buttons a {
+  padding: 0.1rem 0.5rem;
+}
+
+.buttons button {
+  background-color: #008CBA;
+  padding: 0.1rem 0.75rem;
+  color: white;
+  border-radius: 1rem; /* Adds curve to border corners */
+  text-decoration: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.5s; /* Safari */
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background-color:rgba(0, 153, 204, 0.76);
+  color: white; /* Text color */
 }

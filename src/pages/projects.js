@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import styles from './about-css-modules.module.css'
+import styles from './projects.module.css'
 import Container from '../components/container'
 
 import mapStackMockup from '../img/mapstackmockup.png'
@@ -13,16 +13,18 @@ const Project = props => (
       <h2 className={styles.projectname}>{props.projectname}</h2>
       <p className={styles.excerpt}>{props.excerpt}</p>
       <img src={props.mockup} className={styles.mockup} alt="" />
-      <a href={props.siteUrl} target="_blank">
-        <button className="button" >
-          {props.projectname}
-        </button>
-      </a>
-      <a href={props.githubUrl} target="_blank">
-        <button className="button">
-          GitHub
-        </button>
-      </a>
+      <div className={styles.buttons}>
+        <a href={props.siteUrl} target="_blank">
+          <button className="button" >
+            {props.projectname}
+          </button>
+        </a>
+        <a href={props.githubUrl} target="_blank">
+          <button className="button">
+            GitHub
+          </button>
+        </a>
+      </div>
     </div>
   </div>
 )
