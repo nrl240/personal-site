@@ -30,9 +30,10 @@ export default AppFooter
 
 const styles = {
   footer: {
-    padding: `1.5rem 1.5rem`,
+    padding: `0.5rem 0.5rem`,
     display: `flex`,
     justifyContent: `center`,
+    backgroundColor: `#F1D4C7`
   },
   imgsContainer: {
     display: `flex`,

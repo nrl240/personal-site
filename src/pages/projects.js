@@ -1,97 +1,59 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import styles from './about-css-modules.module.css'
+import Container from '../components/container'
 
-export default () => (
-  <div>
-    <h1>Projects</h1>
-    <br/>
-    <div style={styles.projectContainer}>
-        <h3>🌎 MapStack 🌍</h3>
-      <p>
-        Create, follow and stack maps to plan a vacation full of the best local hot spots and off
-        the beaten path gems 💎
-      </p>
-      <ul>
-        <li>
-          GitHub repository 👉{' '}
-          <a href="https://github.com/FSACapstone/MapIt" target="_blank">
-            https://github.com/FSACapstone/MapIt
-          </a>
-        </li>
-        <li>
-          Start sharing your favorite places with us at{' '}
-          <a href="https://map-it-fsa.firebaseapp.com/" target="_blank">
-            https://map-it-fsa.firebaseapp.com/
-          </a>{' '}
-          📍
-        </li>
-      </ul>
-    </div>
-    <div style={styles.projectContainer}>
-      <h3>🎶 The Listening Room 🎶</h3>
-      <p>
-        Passionate about music, <a href="https://luis-rincon-portfolio.herokuapp.com/" target="_blank">Luis Rincon</a> and I
-        developed The Listening Room during a four-day hackathon. By leveraging Firebase's Cloud
-        Storage and Realtime Database, users are able to seamlessly upload mp3 files, and listen and
-        chat about music simultaneously anywhere in the world, without skipping a beat. The
-        minimalistic front-end was built using React and Flexbox.
-      </p>
-      <ul>
-        <li>
-          GitHub repository 👉{' '}
-          <a href="https://github.com/TheListeningRoom/the-listening-room" target="_blank">
-            https://github.com/TheListeningRoom/the-listening-room
-          </a>
-        </li>
-        <li>
-          Share tunes at{' '}
-          <a href="https://symbalplayer.firebaseapp.com/" target="_blank">
-            https://symbalplayer.firebaseapp.com/
-          </a>{' '}
-          🎧
-        </li>
-      </ul>
-    </div>
-    <div style={styles.projectContainer}>
-      <h3>🌶 Saucesome 🌶</h3>
-      <p>
-        Built in a week by a team of four developers launching their careers in tech, Saucesome is a
-        spicy, mock e-commerce site that sells hot sauce sourced from all around the world. They
-        utilized Node.js, Express, Postgres and Sequelize in the back-end, and React-Redux, Mapbox
-        and extensive CSS with Bootstrap and Flexbox in the front-end. Google authentication was
-        used for a seamless login experience using Passport. Nodemailer was leveraged for sending
-        customers order confirmation emails.
-      </p>
-      <ul>
-        <li>
-          GitHub repository 👉{' '}
-          <a href="https://github.com/saucesome-gs/saucesome" target="_blank">
-            https://github.com/saucesome-gs/saucesome
-          </a>
-        </li>
-        <li>
-          Can you handle the heat?{' '}
-          <a href="https://saucesome-fsa.herokuapp.com/" target="_blank">
-            https://saucesome-fsa.herokuapp.com/
-          </a>{' '}
-          🔥
-        </li>
-      </ul>
+import mapStackMockup from '../img/mapstackmockup.png'
+import saucesomeMockup from '../img/saucesomemockup.png'
+import theListeningRoomMockup from '../img/theListeningRoomMockup.png'
+
+const Project = props => (
+  <div className={styles.project}>
+    <div className={styles.description}>
+      <h2 className={styles.projectname}>{props.projectname}</h2>
+      <p className={styles.excerpt}>{props.excerpt}</p>
+      <img src={props.mockup} className={styles.mockup} alt="" />
+      <a href={props.siteUrl} target="_blank">
+        <button className="button" >
+          {props.projectname}
+        </button>
+      </a>
+      <a href={props.githubUrl} target="_blank">
+        <button className="button">
+          GitHub
+        </button>
+      </a>
     </div>
   </div>
 )
 
-const styles = {
-  projectContainer: {
-    display: `flex`,
-    flexDirection: `column`,
-    justifyContent: `center`,
-    padding: `1rem 0rem`,
-  },
-}
+export default () => (
+  <Container>
+    <h1>Projects</h1>
+    <Project
+      projectname="MapStack"
+      mockup={mapStackMockup}
+      excerpt="A social media platform that allows users to create, follow and stack maps on one another to curate a perfect collection of places to explore in their own neighborhood or halfway around the world."
+      siteUrl="https://map-it-fsa.firebaseapp.com/"
+      githubUrl="https://github.com/FSACapstone/MapIt"
+    />
 
-// <h2>
-//   <a style={{ display: 'table-cell' }} href="https://github.com/nrl240" target="_blank">
-//     GitHub
-//   </a>
-// </h2>
+    <Project
+      projectname="Saucesome"
+      mockup={saucesomeMockup}
+      excerpt="A mock e-commerce site that sells a carefully curated selection of gourmet hot sauces from small-match makers around the world. Saucesome also integrates the Mapbox API to show the shoppers where their desired hot sauce is made."
+      siteUrl="https://saucesome-fsa.herokuapp.com/"
+      githubUrl="https://github.com/saucesome-gs/saucesome"
+    />
+
+    <Project
+      projectname="The Listening Room"
+      mockup={theListeningRoomMockup}
+      excerpt="Passionate about music, Luis Rincon and I developed The Listening Room during a four-day hackathon. By leveraging Firebase's Cloud Storage and Realtime Database, users are able to seamlessly upload mp3 files, and listen and chat about music simultaneously anywhere in the world, without skipping a beat. The minimalistic front-end was built using React and Flexbox."
+      siteUrl="https://symbalplayer.firebaseapp.com/"
+      githubUrl="https://github.com/TheListeningRoom/the-listening-room"
+    />
+
+  </Container>
+)
+

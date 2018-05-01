@@ -5,7 +5,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import 'font-awesome/css/font-awesome.css'
-import './all.sass'
+// import './all.sass'
 
 import {
   Container,
