@@ -21,7 +21,7 @@ import AppFooter from '../components/Footer'
 const TemplateWrapper = ({ children }) => (
   <div>
     <Hero isFullHeight>
-      <HeroHeader isColor="primary">
+      <HeroHeader>
         <AppHeader />
       </HeroHeader>
       <HeroBody>
