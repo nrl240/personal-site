@@ -25,17 +25,17 @@ h1 {
 }
 
 .projectname {
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.4em;
   padding: 0;
 }
 
 .excerpt {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.5em;
 }
 
 .techStack {
   text-align: center;
-  padding: 0 0 0.25em 0;
+  padding: 0 0 0.5em 0;
 }
 
 .techStack img {
@@ -57,7 +57,7 @@ h1 {
 
 .buttons button {
   background-color: #cc6666;
-  padding: 0.1rem 0.75rem;
+  padding: 0.1em 0.75em;
   border-radius: 15px;
   color: white;
   text-decoration: none;

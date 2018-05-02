@@ -1,0 +1,19 @@
+Footer {
+  padding: 0.5rem 0.5rem;
+  display: flex;
+  justify-content: center;
+  background-color: #e2e0e0;
+}
+
+.imgsContainer {
+  display: flex;
+}
+
+.imgsContainer a {
+  margin: 0 0.75em;
+}
+
+.iconImg {
+  height: 50px;
+  margin: 4px 2px 0;
+}

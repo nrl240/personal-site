@@ -10,24 +10,25 @@ import theListeningRoomMockup from '../img/theListeningRoomMockup.png'
 import { reactImg, bootstrapImg, firebaseImg, googlemapsImg, herokuImg, nodeImg, postgresqlImg } from '../img/tech'
 
 const Project = props => {
-  console.log('props.techImgs -->', props.techImgs)
+
   const techImgs = props.techImgs
+
   return (
   <div className={styles.project}>
     <div className={styles.description}>
       <h2 className={styles.projectname}>{props.projectname}</h2>
       <p className={styles.excerpt}>{props.excerpt}</p>
     </div>
+    <div className={styles.mockup}>
+      <img src={props.mockup} alt="" />
+    </div>
     <div className={styles.techStack} >
       { techImgs
         ? techImgs.map(image =>
           <img src={image} alt="" />
         )
-        : 'Loading'
+        : 'Tech stack loading...'
       }
-    </div>
-    <div className={styles.mockup}>
-      <img src={props.mockup} alt="" />
     </div>
     <div className={styles.buttons}>
       <a href={props.siteUrl} target="_blank">
@@ -67,7 +68,7 @@ export default () => (
       excerpt="Passionate about music, Luis Rincon and I developed The Listening Room during a four-day hackathon. By leveraging Firebase's Cloud Storage and Realtime Database, users are able to seamlessly upload mp3 files, and listen and chat about music simultaneously anywhere in the world, without skipping a beat. The minimalistic front-end was built using React and Flexbox."
       siteUrl="https://symbalplayer.firebaseapp.com/"
       githubUrl="https://github.com/TheListeningRoom/the-listening-room"
-      techImgs={[reactImg, firebaseImg, nodeImg]}
+      techImgs={[reactImg, firebaseImg]}
     />
   </Container>
 )

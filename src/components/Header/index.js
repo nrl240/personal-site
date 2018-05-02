@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import faviconBlock from '../../img/faviconBlock.png'
+// import faviconBlock from '../../img/faviconBlock.png'
 
 const ListLink = props => (
   <li style={{ display: `inline-block`, marginRight: `1rem` }}>
