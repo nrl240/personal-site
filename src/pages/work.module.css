@@ -2,23 +2,24 @@
   margin: 0 1.5em;
 }
 
-.wrapCollabsible {
+/* .wrapCollabsible { */
   /* margin-bottom: 1.2rem; */
   /* margin: 0 1em 1.2em 1em; */
-}
+/* } */
 
 input[type='checkbox'] {
-  display: none;
+  /* display: none; NOW */
+  visibility: hidden;
 }
 
 .lblToggle {
   display: block;
 
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.2em;
   text-align: center;
 
-  padding: 0.25rem;
+  padding: 0.2em 0;
   margin-top: 0.5em;
 
   /* color: #A77B0E; */
@@ -37,7 +38,7 @@ input[type='checkbox'] {
   color: #333A56;
 }
 
-.lblToggle::before {
+.lblToggle::after {
   content: ' ';
   display: inline-block;
 
@@ -51,7 +52,7 @@ input[type='checkbox'] {
   transition: transform .2s ease-out;
 }
 
-.toggle:checked + .lblToggle::before {
+.toggle:checked + .lblToggle::after {
   transform: rotate(90deg) translateX(-3px);
 }
 
