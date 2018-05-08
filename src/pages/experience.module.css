@@ -1,0 +1,98 @@
+h1 {
+  margin: 0 0.5em 0.75em;
+}
+
+.companyname {
+  margin: 0 0.875em 0.5em;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1.5em 0.25em;
+}
+
+.project:last-child {
+  margin-bottom: 0;
+}
+
+.mockup img {
+  margin: 0;
+}
+
+.description {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.projectname {
+  margin-bottom: 0.4em;
+  padding: 0;
+}
+
+ol {
+  margin: 0 0 0 0;
+  list-style-position: outside;
+  /* color: #ccc; */
+  list-style-type: none;
+}
+
+ol li {
+  position: relative;
+}
+
+li p {
+  padding-left: 1em;
+  margin: 0 0 0 0;
+  color: #555;
+}
+
+span {
+  position: absolute;
+}
+
+
+.techStack {
+  text-align: center;
+  padding: 0 0 0.5em 0;
+}
+
+.techStack img {
+  width: 100px;
+  max-width: 100%;
+  vertical-align: middle;
+  margin: 0 5px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.buttons a {
+  margin: 0 1em;
+  border-radius: 15px;
+}
+
+.buttons button {
+  background-color: #cc6666;
+  padding: 0.1em 0.75em;
+  border-radius: 15px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.5s; /* Safari */
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background-color: #cc9999;
+  color: white; /* Text color */
+}

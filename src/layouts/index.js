@@ -11,15 +11,13 @@ import {
   HeroBody,
 } from 'bloomer'
 
-import AppHeader from '../components/Header'
+import AppHeader from '../components/Header.js'
 import AppFooter from '../components/Footer.js'
 
 const TemplateWrapper = ({ children }) => (
   <div className={styles.Site}>
     <Hero isFullHeight className={styles.SiteContent}>
-      <HeroHeader>
-        <AppHeader />
-      </HeroHeader>
+      <AppHeader />
       <HeroBody>
         {children()}
       </HeroBody>

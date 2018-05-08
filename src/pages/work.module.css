@@ -1,0 +1,81 @@
+.jobsContainer {
+  margin: 0 1.5em;
+}
+
+.wrapCollabsible {
+  /* margin-bottom: 1.2rem; */
+  /* margin: 0 1em 1.2em 1em; */
+}
+
+input[type='checkbox'] {
+  display: none;
+}
+
+.lblToggle {
+  display: block;
+
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+
+  padding: 0.25rem;
+  margin-top: 0.5em;
+
+  /* color: #A77B0E; */
+  /* background: #FAE042; */
+  color: #52658F;
+  background: #E8E8E8;
+
+  cursor: pointer;
+
+  border-radius: 7px;
+  transition: all 0.25s ease-out;
+}
+
+.lblToggle:hover {
+  /* color: #7C5A0B; */
+  color: #333A56;
+}
+
+.lblToggle::before {
+  content: ' ';
+  display: inline-block;
+
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid currentColor;
+  vertical-align: middle;
+  margin-right: .7rem;
+  transform: translateY(-2px);
+
+  transition: transform .2s ease-out;
+}
+
+.toggle:checked + .lblToggle::before {
+  transform: rotate(90deg) translateX(-3px);
+}
+
+.collapsibleContent {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height .25s ease-in-out;
+}
+
+.toggle:checked + .lblToggle + .collapsibleContent {
+  max-height: 1000px;
+}
+
+.toggle:checked + .lblToggle {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.collapsibleContent .contentInner {
+  /* background: rgba(250, 224, 66, .2); */
+  /* border-bottom: 1px solid rgba(250, 224, 66, .45); */
+  background: rgba(232, 232, 232, 0.2);
+  border-bottom: rgba(232, 232, 232, 0.45);
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  padding: .5rem 1rem;
+}
